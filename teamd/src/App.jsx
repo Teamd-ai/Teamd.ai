@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ReactLenis } from "lenis/react";
+import { ReactLenis, useLenis } from "lenis/react";
 import "lenis/dist/lenis.css";
 
 import Home from "./pages/Home";
@@ -15,14 +15,24 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function AnimatedRoutes() {
   const location = useLocation();
+  const lenis = useLenis();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "auto",
+    requestAnimationFrame(() => {
+      if (lenis) {
+        lenis.scrollTo(0, {
+          immediate: true,
+          force: true,
+        });
+      } else {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "auto",
+        });
+      }
     });
-  }, [location.pathname]);
+  }, [location.pathname, lenis]);
 
   return (
     <motion.div
