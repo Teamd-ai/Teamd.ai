@@ -129,10 +129,10 @@ function ArrowCircle({ size = 41.38 }) {
 
 function ModelRow({ model }) {
   return (
-    <article className="group relative w-full border-y-2 border-r-2 border-l-0 border-[#DADDE7] transition-colors duration-300 hover:bg-[#f8f6f0] active:bg-[#f8f6f0] md:h-[400px]">
-      <div className="relative mx-auto h-full w-full max-w-[1440px] px-6 py-14 md:px-0 md:py-0">
+    <article className="group relative w-full border-y-2 border-r-2 border-l-0 border-[#DADDE7] transition-colors duration-300 hover:bg-[#f8f6f0] active:bg-[#f8f6f0] xl:h-[400px]">
+      <div className="relative mx-auto h-full w-full max-w-[1440px] px-6 py-14 xl:px-0 xl:py-0">
         {/* Desktop / Figma layout */}
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <img
             src={model.icon}
             alt=""
@@ -177,7 +177,7 @@ function ModelRow({ model }) {
         </div>
 
         {/* Mobile / tablet safe layout */}
-        <div className="grid gap-7 md:hidden">
+        <div className="grid gap-7 xl:hidden">
           <img
             src={model.icon}
             alt=""
@@ -185,7 +185,7 @@ function ModelRow({ model }) {
           />
 
           <div>
-            <h2 className="m-0 whitespace-nowrap font-['Playfair_Display'] text-[30px] font-bold leading-tight text-black sm:text-[32px]">
+            <h2 className="m-0 font-['Playfair_Display'] text-[30px] font-bold leading-tight text-black sm:text-[32px]">
               {model.title}
             </h2>
 

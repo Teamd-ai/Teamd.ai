@@ -16,12 +16,12 @@ export default function HeroTop() {
   return (
     <section className="w-full bg-[#F4F3EE]">
       {/* Hero */}
-      <div className="relative mx-auto h-[800px] w-full max-w-[1440px] overflow-hidden">
+      <div className="relative h-[800px] w-full overflow-hidden">
         {/* Hero background image */}
         <motion.img
           src="/hero-main.jpg"
           alt="Teamd Hero Background"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-center"
           initial={shouldReduceMotion ? false : { opacity: 0, scale: 1.04 }}
           animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
