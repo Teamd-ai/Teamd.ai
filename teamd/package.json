@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node prerender.mjs",
+    "build": "vite build && npx playwright install chromium --with-deps && node prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+   
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "framer-motion": "^12.42.2",
