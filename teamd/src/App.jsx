@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO from "./components/common/SEO";
 import { ReactLenis, useLenis } from "lenis/react";
 import "lenis/dist/lenis.css";
 
@@ -61,6 +62,8 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <SEO /> 
+      
       <ReactLenis
         root
         options={{
