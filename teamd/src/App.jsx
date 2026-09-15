@@ -13,6 +13,7 @@ import InsightsPage from "./pages/InsightsPage";
 import ContactPage from "./pages/ContactPage";
 import ThankYouPage from "./pages/ThankYouPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import SalesforcePage from "./pages/SalesforcePage";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -53,6 +54,7 @@ function AnimatedRoutes() {
         <Route path="/insights" element={<InsightsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
+        <Route path="/salesforce" element={<SalesforcePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </motion.div>

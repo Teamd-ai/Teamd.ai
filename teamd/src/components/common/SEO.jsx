@@ -27,6 +27,11 @@ const pageMetadata = {
     description:
       "Talk to Teamd about building and operating an offshore team in India. Tell us about your requirements and we'll get back to you within one business day.",
   },
+  "/salesforce": {
+    title: "Salesforce Managed Services | Teamd",
+    description:
+      "A named Teamd admin owns your Salesforce org — request queue, users, permissions, data, release regression testing and documentation. For companies with 10 to 75 users.",
+  },
 };
 
 export default function SEO() {

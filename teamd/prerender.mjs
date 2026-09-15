@@ -6,6 +6,7 @@ import { preview } from "vite";
 const routes = [
   "/",
   "/solutions",
+  "/salesforce",
   "/engagement-models",
   "/clients",
   "/contact",
