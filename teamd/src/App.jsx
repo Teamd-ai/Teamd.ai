@@ -13,7 +13,7 @@ import InsightsPage from "./pages/InsightsPage";
 import ContactPage from "./pages/ContactPage";
 import ThankYouPage from "./pages/ThankYouPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import SalesforcePage from "./pages/Salesforcepage";
+import SalesforcePage from "./pages/SalesforcePage";
 
 function AnimatedRoutes() {
   const location = useLocation();
