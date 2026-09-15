@@ -8,7 +8,7 @@ export default function Navbar({
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "HOME", path: "/" },
+    { name: "SALESFORCE", path: "/salesforce" },
     { name: "SOLUTIONS", path: "/solutions" },
     { name: "ENGAGEMENT MODELS", path: "/engagement-models" },
     { name: clientLabel, path: "/clients" },
